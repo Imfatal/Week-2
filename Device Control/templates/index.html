@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESP32 LED Control</title>
+</head>
+
+<body>
+    <h1>Control LED</h1>
+    <!-- Making buttons -->
+    <form method="post">
+        <button type="submit" name="on">Turn ON</button>
+        <button type="submit" name="off">Turn OFF</button>
+    </form>
+
+    <!-- the content of the variable "message" from app.py is received and its content is-->
+    {% if message %}
+    <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+
+</html>
